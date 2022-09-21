@@ -15,7 +15,6 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
       </Head>
-    <script src="../public/~partytown/partytown.js"></script>
     <main>
       Hello home Page
       <div>
