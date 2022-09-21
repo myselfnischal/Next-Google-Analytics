@@ -16,12 +16,17 @@ function MyApp({ Component, pageProps }) {
 
     // If the component is unmounted, unsubscribe
     // from the event with the `off` method
+    
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+  <Component {...pageProps} />
+  </>
+  )
 }
 
 export default MyApp
